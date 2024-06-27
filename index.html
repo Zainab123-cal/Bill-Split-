@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Split Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bill Split Calculator</h1>
+  <form>
+    <label for="billAmount">Bill Amount (₹):</label>
+    <input type="number" id="billAmount" value="0">
+
+    <label for="numPeople">Number of People:</label>
+    <input type="number" id="numPeople" value="1">
+
+    <label for="tipPercent">Tip Percentage (%):</label>
+    <input type="number" id="tipPercent" value="10">
+
+    <button id="calculateButton">Calculate</button>
+
+    <div id="result">
+      <p>Each person owes: <span id="eachPersonOwes">₹0.00</span></p>
+      <p>Total tip: <span id="totalTip">₹0.00</span></p>
+      <p>Total amount: <span id="totalAmount">₹0.00</span></p>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
